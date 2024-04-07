@@ -1,4 +1,4 @@
-public class ColoredCircle extends Circle {
+public class ColoredCircle extends Circle { 
     private String color;
 
     public ColoredCircle(Point center, double radius, String color) {

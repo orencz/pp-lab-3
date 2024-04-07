@@ -1,9 +1,14 @@
+import geometry.Point;
+import geometry.Circle;
+
 public class Main {
     public static void main(String[] args) {
+    
+        Point center = new Point(0, 0);
         
-        Point point = new Point(2.25, 3.25);
+        Circle circle = new Circle(center, 9); 
         
-        point.setX(4.25);
-        point.setY(5.25);
-        
-        System.out.println("Współrzędne: x = " + point.getX() + ", y = " + point.getY()); }}
+        System.out.println("Centrum: x = " + circle.getCenter().getX() + ", y = " + circle.getCenter().getY());
+        System.out.println("Promień: " + circle.getRadius());
+        System.out.println("Obwód: " + circle.calculatePerimeter());
+        System.out.println("Pole powierzchni: " + circle.getArea()); }}

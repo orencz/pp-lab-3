@@ -9,4 +9,4 @@ public class Main {
 
         
         for (Circle circle : circles) {
-            System.out.println("Pole: " + circle.getArea());}}}
+            System.out.println("P: " + circle.getArea());}}}

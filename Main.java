@@ -1,12 +1,16 @@
+import geometry.Point;
+import geometry.Circle;
+import geometry.ColoredCircle;
+
 public class Main {
     public static void main(String[] args) {
-    
-        Point center = new Point(0, 0);
+
+        Circle[] circles = new Circle[3];
         
-        ColoredCircle coloredCircle = new ColoredCircle(center, 9, "pomarańczowy "); 
+        circles[0] = new Circle(new Point(5, 5), 6); 
+        circles[1] = new ColoredCircle(new Point(6, 6), 7, "Zielony");
+        circles[2] = new Circle(new Point(7, 7), 8); 
+
         
-        System.out.println("Wartość: x = " + coloredCircle.getCenter().getX() + ", y = " + coloredCircle.getCenter().getY());
-        System.out.println("Promień: " + coloredCircle.getRadius());
-        System.out.println("Obwód: " + coloredCircle.calculatePerimeter());
-        System.out.println("Pole: " + coloredCircle.getArea());
-        System.out.println("Kolor: " + coloredCircle.getColor());}}
+        for (Circle circle : circles) {
+            System.out.println("Pole powierzchni kola: " + circle.getArea());}}}

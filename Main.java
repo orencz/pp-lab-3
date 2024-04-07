@@ -6,4 +6,4 @@ public class Main {
         point.setX(4.25);
         point.setY(5.25);
         
-        System.out.println("Współrzędne: x = " + point.getX() + ", y = " + point.getY()); }}
+        System.out.println("Wspolrzedne: x = " + point.getX() + ", y = " + point.getY()); }}

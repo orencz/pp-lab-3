@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
+       
+        Square square = new Square(9.0); 
         
-        Rectangle rectangle = new Rectangle(5.0, 10.0); 
-
-        System.out.println("Dlugosc: " + rectangle.getLength());
-        System.out.println("Szerokosc: " + rectangle.getWidth());
-        System.out.println("P: " + rectangle.calculateArea());
-        System.out.println("Obw: " + rectangle.calculatePerimeter());}}
+        System.out.println("P: " + square.calculateArea());
+        System.out.println("Obw " + square.calculatePerimeter());
+    }
+}

@@ -1,6 +1,3 @@
-import geometry.Point;
-import geometry.Circle;
-
 public class Main {
     public static void main(String[] args) {
     

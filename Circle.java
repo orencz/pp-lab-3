@@ -1,4 +1,4 @@
-public class Circle {
+public class Circle {  
     private Point center;
     private double radius;
 

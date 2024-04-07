@@ -3,9 +3,10 @@ public class Main {
     
         Point center = new Point(0, 0);
         
-        Circle circle = new Circle(center, 9); 
+        ColoredCircle coloredCircle = new ColoredCircle(center, 9, "pomarańczowy "); 
         
-        System.out.println("Centrum: x = " + circle.getCenter().getX() + ", y = " + circle.getCenter().getY());
-        System.out.println("Promień: " + circle.getRadius());
-        System.out.println("Obwód: " + circle.calculatePerimeter());
-        System.out.println("Pole powierzchni: " + circle.getArea()); }}
+        System.out.println("Wartość: x = " + coloredCircle.getCenter().getX() + ", y = " + coloredCircle.getCenter().getY());
+        System.out.println("Promień: " + coloredCircle.getRadius());
+        System.out.println("Obwód: " + coloredCircle.calculatePerimeter());
+        System.out.println("Pole: " + coloredCircle.getArea());
+        System.out.println("Kolor: " + coloredCircle.getColor());}}
